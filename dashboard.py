@@ -428,8 +428,8 @@ def render_pick(pick: dict, cat: str, rank: int):
                               annotation_font_color='#10b981', row=1, col=1)
 
             if volumes:
-                v_colors = ['#10b98144' if i==0 or volumes[i]>=volumes[i-1]
-                            else '#ef444444' for i in range(len(volumes))]
+                v_colors = ['rgba(16,185,129,0.27)' if i==0 or volumes[i]>=volumes[i-1]
+                            else 'rgba(239,68,68,0.27)' for i in range(len(volumes))]
                 fig.add_trace(go.Bar(x=x, y=volumes, marker_color=v_colors,
                                      showlegend=False), row=2, col=1)
 
