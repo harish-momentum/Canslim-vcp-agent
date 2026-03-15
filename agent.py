@@ -252,6 +252,7 @@ def call_claude_api(prompt: str) -> str:
                 "model": "claude-haiku-4-5-20251001",
                 "max_tokens": 1000,
                 "messages": [{"role": "user", "content": prompt}],
+                "system": "You are a senior equity analyst specialising in momentum investing. Be concise and direct.",
             },
             timeout=45,
         )
