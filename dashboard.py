@@ -407,7 +407,7 @@ def render_pick(pick: dict, cat: str, rank: int):
 
             fig.add_trace(go.Scatter(x=x, y=closes,
                                      line=dict(color='#3b82f6', width=1.5),
-                                     fill='tozeroy', fillcolor='#3b82f610',
+                                     fill='tozeroy', fillcolor='rgba(59,130,246,0.06)',
                                      name='Close'), row=1, col=1)
 
             # Add DMA lines (last N points of each)
